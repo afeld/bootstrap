@@ -28,7 +28,10 @@
         </div>
         {% unless page.fullwidth == true %}
         <div class="col-md-3" role="complementary">
-          <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
+          <div class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
+            <nav class="table-of-contents">
+              <!-- Table of Contents will be injected here -->
+            </nav>
             <a class="back-to-top" href="#top">
               Back to top
             </a>
@@ -37,7 +40,7 @@
               Preview theme
             </a>
             {% endif %}
-          </nav>
+          </div>
         </div>
         {% endunless %}
       </div>

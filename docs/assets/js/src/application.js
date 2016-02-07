@@ -22,7 +22,7 @@
 
     // Sidebar
     Toc.init({
-      $nav: $('.bs-docs-sidebar'),
+      $nav: $('.bs-docs-sidebar .table-of-contents'),
       $scope: $('.bs-docs-section > h1,.bs-docs-section > h2,[role="main"] > h2')
     });
     $body.scrollspy({
