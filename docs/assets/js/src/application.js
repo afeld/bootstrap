@@ -20,6 +20,11 @@
     var $window = $(window)
     var $body   = $(document.body)
 
+    // Sidebar
+    Toc.init({
+      $nav: $('.bs-docs-sidebar'),
+      $scope: $('.bs-docs-section > h1,.bs-docs-section > h2,[role="main"] > h2')
+    });
     $body.scrollspy({
       target: '.bs-docs-sidebar'
     })
